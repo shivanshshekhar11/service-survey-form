@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Survey Form
+        </title>
+
+        <style>
+            
+            body{
+                font-family: verdana,sans-serif;
+                color:white;
+                background:url("https://images.wallpaperscraft.com/image/wall_bricks_blue_117245_4516x3011.jpg") fixed;
+            }
+            
+            .center{
+                text-align:center;
+            }
+            
+            input{
+                display:block;
+            }
+
+            label{
+                display:block;
+            }
+
+            button{
+                display: block;
+                width:20%;
+                margin:5% 40% 3% 40%;
+                height: 3em;
+                border:none;
+                border-radius: 1em;
+                background-color: rgb(61, 68, 138);
+                font-family: verdana,sans-serif;
+                color:white;
+            }
+
+            .flex{
+                display: flex;
+                font-size: large;
+                margin-bottom: 0.75%;
+                margin-right:2%;
+            }
+
+            #form{
+                width:60%;
+                margin:5% 20% 3% 20%;
+                border-radius:2%;
+                background-color: rgba(43, 40, 228,0.75);
+                padding-left: 2.5%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+
+            .fill{
+                width:95%;
+                margin-right:2.5%;
+                font-size: medium;
+                height: 2em;
+                border:none;
+                border-radius: 0.5em;
+            }
+
+            .margin{
+                margin:5% 0% 2.5% 0%;
+                font-size: large;
+            }
+
+            textarea{
+                width:95%;
+                margin-right: 2.5%;
+                font-size: large;
+                border:none;
+                border-radius: 0.5em;
+            }
+
+            input[type=radio],input[type=checkbox]{
+                height:1em;
+                width:1em;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 class="center" id="title">
+            Service survey form
+        </h1>
+        <p class="center" id="description">
+            Thank you for taking the time to help us improve the platform.
+        </p>
+        <div id="form">
+            <form id="survey-form" action="">
+                <label class="margin" id="name-label" for="name">Name :</label>
+                <input class="fill" type="text" required placeholder="Enter your name" id="name">
+
+                <label class="margin" id="email-label" for="email">Email ID :</label>
+                <input class="fill" type="email" required placeholder="Enter your Email ID" id="email">
+
+                <label class="margin" id="number-label" for="number">Age (Optional) :</label>
+                <input class="fill" id="number" type="number" placeholder="Age" min="5" max="100">
+
+                <label class="margin" for="dropdown">Which best suits your current role :</label>
+                
+                <select class="fill" id="dropdown" name="current-role" size="1">
+                
+                    <option value="student">Student</option>
+
+                    <option value="employed">Employed</option>
+
+                    <option value="full-time-learner">Full-time learner</option>
+
+                    <option value="other">Other</option>
+
+                    <option value="not-to-say">Prefer not to say</option>
+                
+                </select>
+
+                <label class="margin">Would you reccomend service to a friend :</label>
+                    
+                    <label class="flex" for="def">
+                        <input type="radio" class="flex" name="reccomend" id="def" value="definitely">
+                         Definitely
+                    </label>
+
+                    <label class="flex" for="maybe">
+                        <input type="radio" class="flex" name="reccomend" id="maybe" value="maybe">
+                         Maybe
+                    </label>
+
+                    <label class="flex" for="No">
+                        <input type="radio" class="flex" name="reccomend" id="No" value="not-sure">
+                         Not sure
+                    </label>
+
+                <label class="margin" for="feature">What is your favourite feature of service :</label>
+                
+                <select class="fill" id="feature" name="feature" size="1">
+                
+                    <option value="challanges">Challanges</option>
+
+                    <option value="projects">Projects</option>
+
+                    <option value="community">Community</option>
+                    
+                    <option value="open-source">Open-source</option>
+                
+                </select>
+
+                <label class="margin">What would you like to see improved :</label>
+                
+                    <label class="flex" for="front-end">
+                        <input type="checkbox" class="flex" name="improve" id="front-end" value="front-end-projects">
+                         Front-end projects
+                    </label>
+
+                    <label class="flex" for="back-end">
+                        <input type="checkbox" class="flex" name="improve" id="back-end" value="back-end-projects">
+                         Back-end projects
+                    </label>
+
+                    <label class="flex" for="data-vis">
+                        <input type="checkbox" class="flex" name="improve" id="data-vis" value="data-visualization">
+                         Data-visualization
+                    </label>
+
+                    <label class="flex" for="challanges">
+                        <input type="checkbox" class="flex" name="improve" id="challanges" value="challanges">
+                         Challanges
+                    </label>
+
+                    <label class="flex" for="open-source">
+                        <input type="checkbox" class="flex" name="improve" id="open-source" value="open-source-community">
+                         Open-source community
+                    </label>
+
+                    <label class="flex" for="gitter">
+                        <input type="checkbox" class="flex" name="improve" id="gitter" value="gitter-help-rooms">
+                         Gitter help rooms
+                    </label>
+
+                    <label class="flex" for="videos">
+                        <input type="checkbox" class="flex" name="improve" id="videos" value="videos">
+                         Videos
+                    </label>
+
+                    <label class="flex" for="meetups">
+                        <input type="checkbox" class="flex" name="improve" id="meetups" value="city-meetups">
+                         City meet-ups
+                    </label>
+
+                    <label class="flex" for="wiki">
+                        <input type="checkbox" class="flex" name="improve" id="wiki" value="wiki">
+                         Wiki
+                    </label>
+
+                    <label class="flex" for="forums">
+                        <input type="checkbox" class="flex" name="improve" id="forums" value="forums">
+                         Forums
+                    </label>
+
+                    <label class="flex" for="add-course">
+                        <input type="checkbox" class="flex" name="improve" id="add-course" value="additional-courses">
+                         Additional courses
+                    </label>
+
+
+                <label class="margin" for="additional">Any additional suggestions :</label>
+                <textarea id="additional" placeholder="Enter your comment here ..." rows="10" cols="50"></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
